@@ -1,6 +1,6 @@
 ## Investment
 
-### Prerequisitesd
+### Prerequisite
 
 Get free api key of Alpha Vantage from [here](https://www.alphavantage.co/support/#api-key) and keep as format `AV_KET=<your key>` in the `.env` file.
 
