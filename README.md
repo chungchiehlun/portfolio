@@ -9,8 +9,8 @@ Rebalancing is the process of realigning the weightings of a portfolio of assets
 > This involves periodically buying or selling assets in a portfolio to maintain an original or desired level of asset allocation or risk.
 
 - Update your asset allocation in the `asset_allocation.csv` file.
-- Update shares of current positions at *line 19* `rebalancing.py`.
-- Deposit at *line 24* in the `rebalancing.py`
+- Update your cash at *line 11* in the `rebalancing.py`.
+- Update your positions at *line 19* in the `rebalancing.py`.
 - Run `python reblacing.py`. 
 - Get the orders you need to process and latest status of portfolio.
 

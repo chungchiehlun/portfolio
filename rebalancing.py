@@ -8,7 +8,7 @@ targets = pd.read_csv('asset_allocation.csv', header=0, index_col=0, squeeze=Tru
 prices = pf.get_latest_prices(targets.keys())
 
 # Initialize portfolio with cash $10,000 USD
-cash = 10000
+cash = 1458
 portfolio = pf.instantiate_portfolio(targets, cash)
 
 # Initailize shares
@@ -16,7 +16,12 @@ shares = pd.DataFrame({ "shares": portfolio.shares })
 shares.at['CASH', 'shares'] = cash 
 
 # Add shares
-# shares.at['GLD', 'shares'] = 10
+shares.at['GLD', 'shares'] = 10
+shares.at['IWM', 'shares'] = 10
+shares.at['QQQ', 'shares'] = 8
+shares.at['SCHD', 'shares'] = 28
+shares.at['VEA', 'shares'] = 37
+shares.at['VOO', 'shares'] = 5 
 
 portfolio.shares = shares.shares
 
